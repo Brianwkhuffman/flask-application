@@ -12,7 +12,10 @@
 </head>
 <body>
     <h1>Is it New Year's day?</h2>
-    <h2>{{new_year}}</h2>
-    {{headline}}
+    {% if new_year%}
+    <h1>YES!</h1>
+    {% else %}    
+    <h3>Not yet...</h3>
+    {% endif %}    
 </body>
 </html>
