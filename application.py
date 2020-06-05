@@ -13,3 +13,8 @@ def index():
 def bye():
         headline = "Goodbye"
         return render_template("index.html", headline=headline)
+
+@app.route("/names")
+def names():
+        names = ["Rina", "Mewmew", "Brian"]
+        return render_template("names.html", names=names)
