@@ -24,3 +24,6 @@ def names():
         names = ["Rina", "Mewmew", "Brian"]
         return render_template("names.html", names=names)
 
+@app.route("/more")
+def more():
+        return render_template("more.html")
